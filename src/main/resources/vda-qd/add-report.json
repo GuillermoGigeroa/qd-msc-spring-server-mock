@@ -1,0 +1,23 @@
+
+POST http://localhost:8080/vda-qd/1.0/add-report
+
+{
+	"data": {
+		"name": "Prueba Servicio REST",
+		"description": "Servicio rest ejecutado desde Insomnia",
+		"sql": "SELECT * FROM ALIAS WHERE ALIAS = 'TD118652'",
+		"graphic": false,
+		"application": "VDA"
+	}
+}
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "c6a5fbe0-a0dd-42ae-a66a-b945d663a047"
+  },
+  "data": {
+    "header": "OK",
+    "message": "Creando reporte."
+  }
+}

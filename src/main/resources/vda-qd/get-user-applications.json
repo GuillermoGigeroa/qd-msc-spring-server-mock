@@ -1,0 +1,16 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-user-applications
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok"
+  },
+  "data": {
+    "applications": [
+      "VDA",
+      "VDA_RACF"
+    ]
+  }
+}

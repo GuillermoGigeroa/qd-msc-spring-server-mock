@@ -1,0 +1,19 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-report-status
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok"
+  },
+  "data": {
+    "statusList": [
+      "ENABLED",
+      "DISABLED",
+      "ERROR",
+      "PENDING",
+      "VALIDATING"
+    ]
+  }
+}

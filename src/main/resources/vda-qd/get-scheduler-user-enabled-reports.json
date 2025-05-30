@@ -1,0 +1,51 @@
+
+POST http://localhost:8080/vda-qd/1.0/get-scheduler-user-enabled-reports
+
+{
+	"data": {
+		"authorization": "KCL2TeTpD94=",
+		"vdaQdReportSearch": {
+			"name": "",
+			"application": "",
+			"status": "",
+			"user": "ARDP\\TD118652",
+			"vdaQdReportPaginationParameters": {
+				"orderBy": "",
+				"orderOrientation": "",
+				"offSet": null,
+				"pageSize": null
+			}
+		}
+	}
+}
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "1e9199ad-8107-4f74-a13a-fc9d2e5a6ee8"
+  },
+  "data": {
+    "vdaQdReports": [
+      {
+        "reportId": 69,
+        "name": "Prueba Servicio REST 2",
+        "description": "Prueba servicio rest 2"
+      },
+      {
+        "reportId": 67,
+        "name": "Otra prueba Insomnia 2",
+        "description": "Edición por servicio rest"
+      },
+      {
+        "reportId": 65,
+        "name": "Prueba Insomnia",
+        "description": "Alta por servicio rest"
+      },
+      {
+        "reportId": 63,
+        "name": "Test QD",
+        "description": "Test QD"
+      }
+    ]
+  }
+}

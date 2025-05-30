@@ -1,0 +1,22 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-run-info?reportId=67
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "a1e95f99-819f-4c00-8080-c479435d73e5"
+  },
+  "data": {
+    "vdaQdReport": {
+      "reportId": 67,
+      "name": "Otra prueba Insomnia 2",
+      "application": "VDA"
+    },
+    "startTime": "2025/05/26 11:10:56",
+    "endTime": "2025/05/26 11:10:56",
+    "result": "SUCCESS",
+    "comments": "Reporte ejecutado correctamente."
+  }
+}

@@ -1,0 +1,15 @@
+
+GET http://localhost:8080/vda-qd/1.0/view-error?reportId=64
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "a9ba56d0-c64a-44df-8d29-7056cc564da1"
+  },
+  "data": {
+    "reportId": 64,
+    "errorMessage": "Consulta SQL mal escrita."
+  }
+}

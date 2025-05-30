@@ -1,0 +1,15 @@
+
+POST http://localhost:8080/vda-qd/1.0/run-report/67
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "a8d8195f-a90a-4b53-b283-585ec24dcc86"
+  },
+  "data": {
+    "header": "OK",
+    "message": "Ejecutando reporte."
+  }
+}

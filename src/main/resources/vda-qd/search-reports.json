@@ -1,0 +1,111 @@
+
+POST http://localhost:8080/vda-qd/1.0/search-reports
+
+{
+	"data": {
+		"name": "",
+		"application": "",
+		"status": "",
+		"vdaQdReportPaginationParameters": {
+			"orderBy": "application",
+			"orderOrientation": "ASC",
+			"offSet": 0,
+			"pageSize": 15
+		}
+	}
+}
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "5e1aece2-9c17-4e57-9fed-068b67f70911"
+  },
+  "data": {
+    "vdaQdReports": [
+      {
+        "reportId": 63,
+        "name": "Test QD",
+        "description": "Test QD",
+        "sql": "SELECT * FROM CERTIFIC.ALIAS WHERE ALIAS = 'TD118652'",
+        "creationDate": "2025/04/26 15:58:16",
+        "lastUpdate": "2025/04/26 15:58:16",
+        "graphic": false,
+        "status": "ENABLED",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      },
+      {
+        "reportId": 64,
+        "name": "Prueba Fallida",
+        "description": "",
+        "sql": "SELECT * FROM CERTIFIC.ALIAS WHERE =",
+        "creationDate": "2025/05/24 17:32:09",
+        "lastUpdate": "2025/05/24 17:32:09",
+        "graphic": false,
+        "status": "ERROR",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      },
+      {
+        "reportId": 65,
+        "name": "Prueba Insomnia",
+        "description": "Alta por servicio rest",
+        "sql": "SELECT * FROM CERTIFIC.ALIAS WHERE ALIAS = 'TD118652'",
+        "creationDate": "2025/05/24 17:51:40",
+        "lastUpdate": "2025/05/24 17:52:46",
+        "graphic": false,
+        "status": "ENABLED",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      },
+      {
+        "reportId": 67,
+        "name": "Otra prueba Insomnia 2",
+        "description": "Edición por servicio rest",
+        "sql": "SELECT * FROM CERTIFIC.ALIAS WHERE ALIAS = 'TD118652' AND APPLICATION_NAME LIKE '%buadaix%'",
+        "creationDate": "2025/05/24 19:06:37",
+        "lastUpdate": "2025/05/25 18:36:29",
+        "graphic": false,
+        "status": "ENABLED",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      },
+      {
+        "reportId": 68,
+        "name": "Prueba Servicio REST 2",
+        "description": "Prueba servicio rest 2",
+        "sql": "SELECT * FROM ALIAS WHERE ALIAS LIKE '%TD118652%'",
+        "creationDate": "2025/05/25 18:57:07",
+        "lastUpdate": "2025/05/25 19:04:38",
+        "graphic": false,
+        "status": "DISABLED",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      },
+      {
+        "reportId": 69,
+        "name": "Prueba Servicio REST 2",
+        "description": "Prueba servicio rest 2",
+        "sql": "SELECT * FROM ALIAS WHERE ALIAS LIKE '%TD118652%'",
+        "creationDate": "2025/05/25 18:58:30",
+        "lastUpdate": "2025/05/25 19:04:24",
+        "graphic": false,
+        "status": "ENABLED",
+        "application": "VDA",
+        "vdaQdUser": {
+          "userId": "ARDP\\TD118652"
+        }
+      }
+    ]
+  }
+}

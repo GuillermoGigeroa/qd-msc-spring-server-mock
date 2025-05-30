@@ -1,0 +1,15 @@
+
+POST http://localhost:8080/vda-qd/1.0/disable-report/68
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "fda06ea8-bc73-4181-80b3-909c1b8bf037"
+  },
+  "data": {
+    "header": "OK",
+    "message": "Reporte deshabilitado."
+  }
+}

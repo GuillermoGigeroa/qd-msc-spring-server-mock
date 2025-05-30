@@ -1,0 +1,15 @@
+
+GET http://localhost:8080/vda-qd/1.0/preview-report-by-id?reportId=65
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "6460c8eb-36bf-4f90-8408-be6538d6f6e5"
+  },
+  "data": {
+    "header": "OK",
+    "message": "{\"result\":{\"columns\":{\"1\":\"ALIAS\",\"2\":\"APPLICATION_NAME\",\"3\":\"DESCRIPTION\",\"4\":\"USER_IDM\",\"5\":\"ASSOCIATED\",\"6\":\"ALIAS_STATUS\",\"7\":\"LAST_UPDATE\"},\"rows\":[{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"AD\",\"DESCRIPTION\":\"Temnyk, David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"CLA\",\"DESCRIPTION\":\"Temnyk, David Leandro\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"RRH\",\"DESCRIPTION\":\"TEMNYK DAVID\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - armzram002cbcrd\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix001\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix002\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix003\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix005\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix006\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix007\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"}]}}"
+  }
+}

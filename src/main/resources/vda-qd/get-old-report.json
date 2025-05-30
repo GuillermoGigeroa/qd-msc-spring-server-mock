@@ -1,0 +1,25 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-old-report?reportId=67
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "b4cbf2b0-5ce6-4793-b66f-54ea851dd3c4"
+  },
+  "data": {
+    "reportId": 67,
+    "name": "Otra prueba Insomnia 2",
+    "description": "Edición por servicio rest",
+    "sql": "SELECT * FROM CERTIFIC.ALIAS WHERE ALIAS = 'TD118652' AND APPLICATION_NAME LIKE '*buadaix*'",
+    "creationDate": "2025/05/24 19:06:37",
+    "lastUpdate": "2025/05/25 18:35:49",
+    "graphic": false,
+    "status": "ENABLED",
+    "application": "VDA",
+    "vdaQdUser": {
+      "userId": "ARDP\\TD118652"
+    }
+  }
+}

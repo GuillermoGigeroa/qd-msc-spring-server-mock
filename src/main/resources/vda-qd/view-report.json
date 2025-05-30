@@ -1,0 +1,15 @@
+
+GET http://localhost:8080/vda-qd/1.0/view-report?reportId=67
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "78199bc2-d59c-4c83-be27-feaa13b2bb47"
+  },
+  "data": {
+    "header": "OK",
+    "message": "{\"columns\":{\"0\":\"ALIAS\",\"1\":\"APPLICATION_NAME\",\"2\":\"DESCRIPTION\",\"3\":\"USER_IDM\",\"4\":\"ASSOCIATED\",\"5\":\"ALIAS_STATUS\",\"6\":\"LAST_UPDATE\"},\"rows\":[{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix001\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix002\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix003\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix005\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix006\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"},{\"ALIAS\":\"TD118652\",\"APPLICATION_NAME\":\"Unix - buadaix007\",\"DESCRIPTION\":\"Temnyk_David\",\"USER_IDM\":\"TD118652\",\"ASSOCIATED\":\"y\",\"ALIAS_STATUS\":\"ACTIVE\",\"LAST_UPDATE\":\"2025-05-03 00:15:40.622105\"}]}"
+  }
+}

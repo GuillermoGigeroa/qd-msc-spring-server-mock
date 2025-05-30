@@ -1,0 +1,15 @@
+
+POST http://localhost:8080/vda-qd/1.0/delete-report/66
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "a9326b64-abf9-4113-bf9a-e5513f8d30b9"
+  },
+  "data": {
+    "header": "OK",
+    "message": "Eliminando reporte."
+  }
+}

@@ -1,0 +1,15 @@
+
+POST http://localhost:8080/vda-qd/1.0/enable-report/69
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "e0f7fe94-c861-440a-bf85-1ba0923cba0e"
+  },
+  "data": {
+    "header": "OK",
+    "message": "Reporte habilitado."
+  }
+}

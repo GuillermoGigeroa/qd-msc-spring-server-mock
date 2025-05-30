@@ -1,0 +1,981 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-available-tables?applicationName=VDA
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok",
+    "transactionId": "bb95bbf4-9d43-42bb-a825-929401014fba"
+  },
+  "data": {
+    "vdaQdApplicationTableDetails": [
+      {
+        "tableName": "ALIAS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ALIAS_STATUS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ASSOCIATED",
+            "columnType": "CHARACTER"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "USER_IDM",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "USERS",
+              "referencedTableColumnName": "USER_IDM"
+            }
+          }
+        ]
+      },
+      {
+        "tableName": "ALIAS_PERMISSIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "ALIAS",
+              "referencedTableColumnName": "ALIAS"
+            }
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "ALIAS",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PERMISSIONS",
+              "referencedTableColumnName": "ID_PERMISSION"
+            }
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          }
+        ]
+      },
+      {
+        "tableName": "ALIAS_PERMISSIONS_HISTORY",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "MODIFICATION_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "ALIAS_PROFILES",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE1"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE2"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE3"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE4"
+            }
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          }
+        ]
+      },
+      {
+        "tableName": "ALIAS_PROFILES_HISTORY",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "MODIFICATION_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "APPLICATIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_STATUS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "CONNECTOR_ADDITIONAL_PARAMETER_1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "CONNECTOR_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "QUERY_PROFILES_PERMISSIONS",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "QUERY_USER_PERMISSIONS",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "QUERY_USER_PROFILES",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "READING_MODE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_LIMIT",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "APPLICATION_RUN",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PREVIOUS_RUN_TIME",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "RUN_TIME",
+            "columnType": "TIMESTAMP"
+          }
+        ]
+      },
+      {
+        "tableName": "APPLICATION_TRANSLATIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "APPLICATIONS",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "TRANSLATION_NAME",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "CONNECTORS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "CONNECTOR_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "STATUS",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "CONNECTORS_PENDING",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "CONNECTOR_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "STATUS",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "CONNECTORS_PROPERTIES",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "KEY",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "CONNECTORS",
+              "referencedTableColumnName": "NAME"
+            }
+          },
+          {
+            "columnName": "VALUE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "CONNECTORS_PROPERTIES_PENDING",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "KEY",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "CONNECTORS_PENDING",
+              "referencedTableColumnName": "NAME"
+            }
+          },
+          {
+            "columnName": "VALUE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "LOGS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "LOG_DATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "LOG_LEVEL",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LOG_MESSAGE",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "LOG_TYPE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "LOGS_CONFIG",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "PROPERTY",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "VALUE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "PERMISSIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "PERMISSION_NAME",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "PERMISSIONS_HISTORY",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "MODIFICATION_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "PROFILES",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "APPLICATIONS",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "PROFILE_STATUS",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "PROFILES_HISTORY",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "MODIFICATION_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILE_STATUS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "PROFILE_PERMISSIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE1"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE2"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE3"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "PROFILES",
+              "referencedTableColumnName": "DATA_VALUE4"
+            }
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "PROFILE_PERMISSIONS_HISTORY",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "ID_PERMISSION",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "MODIFICATION_TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_NUMBER",
+            "columnType": "INTEGER"
+          }
+        ]
+      },
+      {
+        "tableName": "PROFILE_TRANSLATIONS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "APPLICATION_TRANSLATIONS",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "DATA_VALUE1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DATA_VALUE4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILE_NUMBER",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "TRANSLATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "APPLICATION_TRANSLATIONS",
+              "referencedTableColumnName": "TRANSLATION_NAME"
+            }
+          },
+          {
+            "columnName": "TRANSLATION_VALUE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "SCHEDULER_TASK",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "APPLICATIONS",
+              "referencedTableColumnName": "APPLICATION_NAME"
+            }
+          },
+          {
+            "columnName": "DAY_OF_MONTH",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DAY_OF_WEEK",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "HOUR",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "MINUTES",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "MONTH",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TASK_MODE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TASK_NAME",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "SCHEDULER_TASK_RESULT",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "TASK_COMMENT",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "TASK_FINISH_TIME",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "TASK_NAME",
+            "columnType": "VARCHAR",
+            "vdaQdApplicationTableRelation": {
+              "referencedTableName": "SCHEDULER_TASK",
+              "referencedTableColumnName": "TASK_NAME"
+            }
+          },
+          {
+            "columnName": "TASK_RESULT",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TASK_START_TIME",
+            "columnType": "TIMESTAMP"
+          }
+        ]
+      },
+      {
+        "tableName": "UNCONFIRMED_TASKS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_STATUS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "CONNECTOR_ADDITIONAL_PARAMETER_1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "CONNECTOR_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DAY_OF_MONTH",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DAY_OF_WEEK",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "DESCRIPTION",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "HOUR",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "MINUTES",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "MONTH",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PERMISSIONDATA_NAME4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME1",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME2",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME3",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "PROFILEDATA_NAME4",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "QUERY_PROFILES_PERMISSIONS",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "QUERY_USER_PERMISSIONS",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "QUERY_USER_PROFILES",
+            "columnType": "CLOB"
+          },
+          {
+            "columnName": "READING_MODE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "RUN_LIMIT",
+            "columnType": "INTEGER"
+          },
+          {
+            "columnName": "STATUS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TASK_MODE",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "USERS",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ADMINISTRADO_VDA",
+            "columnType": "CHARACTER"
+          },
+          {
+            "columnName": "CENTRO_COSTOS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "FULLNAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "LAST_UPDATE",
+            "columnType": "TIMESTAMP"
+          },
+          {
+            "columnName": "SUPERVISOR_USER_ID",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "USER_IDM",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "USER_STATUS",
+            "columnType": "VARCHAR"
+          }
+        ]
+      },
+      {
+        "tableName": "USERS_VIEW",
+        "vdaQdApplicationTableColumns": [
+          {
+            "columnName": "ADMINISTRADO_VDA",
+            "columnType": "CHARACTER"
+          },
+          {
+            "columnName": "ALIAS",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "APPLICATION_NAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "FULLNAME",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "TYPE",
+            "columnType": "VARCHAR"
+          },
+          {
+            "columnName": "USER_IDM",
+            "columnType": "VARCHAR"
+          }
+        ]
+      }
+    ]
+  }
+}

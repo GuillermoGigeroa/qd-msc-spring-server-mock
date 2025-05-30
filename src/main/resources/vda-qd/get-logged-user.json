@@ -1,0 +1,14 @@
+
+GET http://localhost:8080/vda-qd/1.0/get-logged-user
+
+<NO BODY>
+
+{
+  "header": {
+    "resultCode": "ok"
+  },
+  "data": {
+    "header": "OK",
+    "message": "{\"userId\":\"TD118652\",\"user\":true,\"supervisor\":true}"
+  }
+}
