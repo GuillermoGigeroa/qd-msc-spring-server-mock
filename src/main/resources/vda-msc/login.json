@@ -1,10 +1,40 @@
 {
   "header": {
+    "messageCode": "WC100",
+    "messageDescription": "No data found",
     "resultCode": "ok",
-    "transactionId": "a9326b64-abf9-4113-bf9a-e5513f8d30b9"
+    "serviceInstance": {
+      "system": "retail",
+      "name": "com.midd.test.service.AccountsService",
+      "operation": "listAccounts",
+      "version": "1.0.4",
+      "ip": "10.11.12.13",
+      "port": "28080",
+      "layer": "service",
+      "index": 2,
+      "latency": 247
+    },
+    "transactionId": "8a33ff49-64adce33-0164-add58e7b-0032",
+    "error": [
+      {
+        "code": "WC100",
+        "description": "No data found",
+        "id": "accountNumber"
+      }
+    ],
+    "errorDetail": [
+      {
+        "code": "WC100",
+        "description": "No data found",
+        "id": "accountNumber"
+      }
+    ]
   },
   "data": {
-    "header": "OK",
-    "message": "Login exitoso"
+    "loginOk": true,
+    "userID": "string",
+    "userEmail": "string",
+    "userName": "string",
+    "userSurname": "string"
   }
 }
