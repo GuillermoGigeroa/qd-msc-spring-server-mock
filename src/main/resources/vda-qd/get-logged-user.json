@@ -1,8 +1,3 @@
-
-GET http://localhost:8080/vda-qd/1.0/get-logged-user
-
-<NO BODY>
-
 {
   "header": {
     "resultCode": "ok"

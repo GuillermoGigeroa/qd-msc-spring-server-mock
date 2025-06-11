@@ -1,8 +1,3 @@
-
-GET http://localhost:8080/vda-qd/1.0/get-run-info?reportId=67
-
-<NO BODY>
-
 {
   "header": {
     "resultCode": "ok",

@@ -1,8 +1,3 @@
-
-GET http://localhost:8080/vda-qd/1.0/view-error?reportId=64
-
-<NO BODY>
-
 {
   "header": {
     "resultCode": "ok",

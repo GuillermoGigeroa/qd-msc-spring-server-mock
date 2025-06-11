@@ -1,21 +1,3 @@
-
-POST http://localhost:8080/vda-qd/1.0/search-all-reports
-
-{
-	"data": {
-		"name": "",
-		"application": "",
-		"status": "",
-		"user": "",
-		"vdaQdReportPaginationParameters": {
-			"orderBy": "application",
-			"orderOrientation": "ASC",
-			"offSet": 0,
-			"pageSize": 15
-		}
-	}
-}
-
 {
   "header": {
     "resultCode": "ok",

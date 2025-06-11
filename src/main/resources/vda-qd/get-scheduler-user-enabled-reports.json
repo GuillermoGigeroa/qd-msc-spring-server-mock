@@ -1,24 +1,3 @@
-
-POST http://localhost:8080/vda-qd/1.0/get-scheduler-user-enabled-reports
-
-{
-	"data": {
-		"authorization": "KCL2TeTpD94=",
-		"vdaQdReportSearch": {
-			"name": "",
-			"application": "",
-			"status": "",
-			"user": "ARDP\\TD118652",
-			"vdaQdReportPaginationParameters": {
-				"orderBy": "",
-				"orderOrientation": "",
-				"offSet": null,
-				"pageSize": null
-			}
-		}
-	}
-}
-
 {
   "header": {
     "resultCode": "ok",
