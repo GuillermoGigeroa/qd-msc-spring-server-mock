@@ -39,12 +39,26 @@ public class VdaQdApiController implements VdaQdApi {
     }
     
     @GetMapping(value = "/1.0/{action}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getMock1(@PathVariable("action") String action) {
+    	System.out.println("GET: "+ FOLDER + action + FORMAT);
+    	return mock(action);
+    }
+    
+    @GetMapping(value = "/{action}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> getMock(@PathVariable("action") String action) {
+    	System.out.println("GET: "+ FOLDER + action + FORMAT);
     	return mock(action);
     }
     
     @PostMapping(value = "/1.0/{action}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> postMock1(@PathVariable("action") String action) {
+    	System.out.println("POST: "+ FOLDER + action + FORMAT);
+    	return mock(action);
+    }
+    
+    @PostMapping(value = "/{action}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> postMock(@PathVariable("action") String action) {
+    	System.out.println("POST: "+ FOLDER + action + FORMAT);
     	return mock(action);
     }
     
